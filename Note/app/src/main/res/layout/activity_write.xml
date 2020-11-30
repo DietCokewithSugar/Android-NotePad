@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Write Title Here"
+        android:maxEms="40"
+        android:singleLine="true"
+        android:textColor="#B89A9A"
+        android:layout_weight="2"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/authorText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:maxEms="40"
+        android:singleLine="true"
+        android:textColor="#B89A9A"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/contentText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        android:gravity="left"
+        android:text="Write your note!"
+        android:textColor="#B89A9A"
+        android:textStyle="italic"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        >
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="save"/>
+
+        <Button
+            android:id="@+id/takePhotoButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Photo"/>
+        <Button
+            android:id="@+id/fromAlbumButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="album"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#B89A9A"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>
